@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cesar-lopez-rivadeneira-6088" translatesAutoresizingMaskIntoConstraints="NO" id="lIP-OE-79e">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfP-ek-2KW">
+                                <rect key="frame" x="52.5" y="297" width="271.5" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month, Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1v-68-h96">
+                                <rect key="frame" x="0.0" y="137" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Azn-rS-LHG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lIP-OE-79e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1lO-bY-BbZ"/>
+                            <constraint firstItem="h1v-68-h96" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="G1h-6T-4DD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h1v-68-h96" secondAttribute="trailing" id="M1y-GX-es9"/>
+                            <constraint firstItem="h1v-68-h96" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UyB-Rf-wxN"/>
+                            <constraint firstItem="lIP-OE-79e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="caO-zh-nhs"/>
+                            <constraint firstItem="lIP-OE-79e" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ccE-Bt-iYY"/>
+                            <constraint firstItem="CfP-ek-2KW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hWC-Xc-gTp"/>
+                            <constraint firstItem="CfP-ek-2KW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q8l-Fz-XMr"/>
+                            <constraint firstItem="h1v-68-h96" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qQT-is-AN0"/>
+                            <constraint firstItem="lIP-OE-79e" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yTO-LR-Vwf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="h1v-68-h96" id="amU-j0-5RS"/>
+                        <outlet property="timeLabel" destination="CfP-ek-2KW" id="vaa-eD-10C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cesar-lopez-rivadeneira-6088" width="4752" height="3168"/>
+    </resources>
+</document>
